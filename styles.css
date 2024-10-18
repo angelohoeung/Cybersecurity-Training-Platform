@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .login-container {
+    width: 340px;
+    height: 100vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .logs {
+    flex: 1;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .logs-header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .logs-body {
+    height: calc(100% - 40px); /* Subtracting header height and padding */
+    overflow-y: scroll; /* Enable vertical scrolling if content exceeds terminal height */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
