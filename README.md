@@ -3,6 +3,9 @@
 ## Group Members
 
 - [Angelo Hoeung](https://github.com/angelohoeung)
+- [Angie Doka](https://github.com/angiedoka)
+- [Gabriela Oljacic](https://github.com/gabrielaoljacic)
+- Julio Costa Sanabria
 
 ## Requirements
 
@@ -14,3 +17,14 @@
 npm install
 npm run dev
 ```
+
+## Stack
+
+- React.js
+- Supabase
+
+## TODO
+
+- [ ] Refactor/improve
+- [ ] Setup Supabase (PostgreSQL) or use another database
+- [ ] Add more courses
