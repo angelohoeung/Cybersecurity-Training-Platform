@@ -5,7 +5,7 @@
 - [Angelo Hoeung](https://github.com/angelohoeung)
 - [Angie Doka](https://github.com/angiedoka)
 - [Gabriela Oljacic](https://github.com/gabrielaoljacic)
-- Julio Costa Sanabria
+- [Julio Costa Sanabria](https://github.com/jullioo)
 
 ## Requirements
 
