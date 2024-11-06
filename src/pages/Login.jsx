@@ -36,7 +36,7 @@ const Login = ({ setToken }) => {
   return (
     <div className="login-container">
 
-      <img src="../../images/cyberguard.jpg" alt="Cyberguard" className="logo" />
+      <img src="images/cyberguard.jpg" alt="Cyberguard" className="logo" />
       <form className="login-form" onSubmit={handleSubmit}>
         <input
           placeholder='Email'
