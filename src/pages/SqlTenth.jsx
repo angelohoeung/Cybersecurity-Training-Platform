@@ -67,7 +67,7 @@ const SqlTenth = ({ token }) => {
         <div className="application" style={{ width: '400px', height: '300px', padding: '20px', border: '1px solid #ccc', borderRadius: '5px', backgroundColor: '#fff', top: '30px' }}>
           <div className="application-logo" style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
             <h2 className="application-name" style={{ fontSize: '24px', marginBottom: '10px', color: '#333' }}>B A N K</h2>
-            <img src="bank_logo.png" alt="Application Logo" width="30" style={{ marginRight: '10px', marginTop: '-12.5px', marginLeft: '7.5px' }} />
+            <img src="images/bank_logo.png" alt="Application Logo" width="30" style={{ marginRight: '10px', marginTop: '-12.5px', marginLeft: '7.5px' }} />
           </div>
           <div style={{ textAlign: 'center', marginTop: '30px' }}>
             <p>Welcome back, user@email.com! Your current balance is $300</p>
