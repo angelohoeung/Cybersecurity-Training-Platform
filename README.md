@@ -26,5 +26,5 @@ npm run dev
 ## TODO
 
 - [ ] Refactor/improve
-- [ ] Setup Supabase (PostgreSQL) or use another database
+- [x] Setup Supabase (PostgreSQL) or use another database
 - [ ] Add more courses
