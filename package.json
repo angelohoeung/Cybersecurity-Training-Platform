@@ -1,14 +1,23 @@
 {
-  "name": "4990_2023_supabase",
+  "name": "cybersecurity-training-platform",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.1.0",
+  "description": "A platform for cybersecurity training with React and Supabase.",
+  "author": "Angelo Hoeung, Angie Doka, Gabriela Oljacic, Julio Costa Sanabria",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angelohoeung/Cybersecurity-Training-Platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angelohoeung/Cybersecurity-Training-Platform/issues"
+  },
+  "homepage": "https://cyberguard.hoeung.ca",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start-backend": "node src/backend/server.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.38.4",
@@ -33,9 +42,12 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "vite": "^5.1.1"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "vite.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "cybersecurity",
+    "training",
+    "platform",
+    "react",
+    "supabase",
+    "vite"
+  ]
 }
