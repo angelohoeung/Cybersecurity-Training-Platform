@@ -1,5 +1,9 @@
 # Cybersecurity Training Platform
 
+Cybersecurity training platform project for COMP-4990.
+
+**Disclaimer**: Built upon a previous group's capstone.
+
 ## Group Members
 
 - [Angelo Hoeung](https://github.com/angelohoeung)
