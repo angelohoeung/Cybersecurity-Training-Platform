@@ -51,7 +51,7 @@ const SignUp = () => {
       <img src="images/cyberguard.jpg" alt="Cyberguard" className="logo" />
       <form className="login-form" onSubmit={handleSubmit}>
         <input
-          placeholder='Firstname'
+          placeholder='Name'
           name='firstName'
           onChange={handleChange}
         />
