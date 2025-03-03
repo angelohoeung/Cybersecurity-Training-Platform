@@ -1,0 +1,142 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.10">
+  <diagram name="Page-1" id="lCje-kDYEjgoGOpUT1ha">
+    <mxGraphModel dx="1110" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TcIuE5Da9l1JLq0rrfyy-2" target="TcIuE5Da9l1JLq0rrfyy-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-3" value="Regex Injection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="125" y="230" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-4" value="Regex injection is a security vulnerability similar to SQL injection. It&#39;s when an attacker&amp;nbsp;uses user input manipulation to take advantage of a system&#39;s handling of regular expressions." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="270" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-5" value="Picture here" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="62.5" y="380" width="235" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-7" value="Click to Begin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.25" y="460" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-8" value="Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="136.87" y="500" width="86.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TcIuE5Da9l1JLq0rrfyy-9" target="TcIuE5Da9l1JLq0rrfyy-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-9" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-10" value="Introduction to Regex Injection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440.63" y="220" width="178.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-11" value="This demo shows how an attacker could exploit a website using regex injection." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-12" value="Picture here" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="412.5" y="320" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-13" value="Start Demo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451.25" y="470" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TcIuE5Da9l1JLq0rrfyy-16" target="TcIuE5Da9l1JLq0rrfyy-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-16" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="610" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-17" value="What is Regex?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90.63" y="630" width="178.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-18" value="&lt;div&gt;Regular expressions are used in order to match a certain pattern of characters. Web developers often use them to validate input or search for matches within strings.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-19" value="Basic examples of some regex expressions here" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="62.5" y="730" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-20" value="Next" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.25" y="860" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-21" value="Previous" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.26" y="900" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-23" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="610" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-24" value="How Attackers Abuse This" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440.63" y="630" width="178.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-25" value="Because some regex expressions are complex, the regex engine can be abused by attackers to exhaust resources on the web server. This is called a denial-of-service (DoS) attack." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="670" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-26" value="Examples of the regex that attackers may use to increase computation time." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="412.5" y="770" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-27" value="Next" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451.25" y="860" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-28" value="Previous" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451.26" y="900" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-36" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="49.99000000000001" y="1010" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-37" value="An Example" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90.62" y="1030" width="178.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-38" value="Show an example of bad code that allows a wildcard search expression sent from client and evaluates string as regex against list of matches." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70.01" y="1145" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-40" value="Next" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.24000000000001" y="1260" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-41" value="Previous" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.25" y="1300" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-42" value="Below is something you should NEVER do:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70.01" y="1070" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-43" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1010" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-44" value="Prevention" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440.63" y="1030" width="178.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-45" value="List of what to avoid" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1070" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-46" value="Quiz" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451.25" y="1260" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-47" value="Previous" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451.26" y="1300" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-49" value="Good code example" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420.01" y="1140" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-50" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="49.99000000000001" y="1420" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-51" value="Quiz" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90.62" y="1440" width="178.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-53" value="Next" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.24000000000001" y="1670" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-54" value="Previous" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="101.25" y="1710" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-56" value="Next" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451.26" y="1220" width="157.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TcIuE5Da9l1JLq0rrfyy-57" value="Question 1..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="69.99000000000001" y="1520" width="220" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
