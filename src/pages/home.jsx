@@ -95,7 +95,7 @@ const Home = ({ token }) => {
                             <button>Email Spoofing</button>
                         </div>
                          <div className="card" onClick={handleAttackSix}>
-                            <img src="images/spoofing.png" alt="Spoofing" />
+                            <img src="images/xss.jpg" alt="Spoofing" />
                             <button>Cross-Site Scripting</button>
                         </div>
                     </div>
