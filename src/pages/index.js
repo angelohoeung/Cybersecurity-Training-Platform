@@ -23,6 +23,9 @@ import Malvertisinghome from './Malvertisinghome'
 import Malvertisingdemo from './Malvertisingdemo'
 import Malvertisinginfo from './Malveritisinginfo'
 import Malprevention from './Malprevention'
+import RegexInjectionHome from './RegexInjection/RegexInjectionHome'
+import RegexInjectionDemo from './RegexInjection/RegexInjectionDemo.jsx'
+import RegexInjectionCertificate from './RegexInjection/RegexInjectionCertificate'
 import Videos from './Videos'
 import Lessons from './Lessons'
 import About from './About'
@@ -30,5 +33,5 @@ import About from './About'
 
 
 export {
-    Login, SignUp, Malvertisinghome, Malvertisinginfo, Malvertisingdemo, Malprevention, Videos, About, Home, Lessons, AttackOne, AttackTwo, AttackThree, SqlStart, SqlSecond, SqlThird, SqlFourth, SqlFifth, SqlSixth, SqlSeventh, SqlEigth, SqlNinth, SqlTenth, SqlEleventh, ClickjackingDemo, PreventionInfo, SqlQuiz, SqlPrevention
+    Login, SignUp, Malvertisinghome, Malvertisinginfo, Malvertisingdemo, Malprevention, RegexInjectionHome, RegexInjectionDemo, RegexInjectionCertificate, Videos, About, Home, Lessons, AttackOne, AttackTwo, AttackThree, SqlStart, SqlSecond, SqlThird, SqlFourth, SqlFifth, SqlSixth, SqlSeventh, SqlEigth, SqlNinth, SqlTenth, SqlEleventh, ClickjackingDemo, PreventionInfo, SqlQuiz, SqlPrevention
 }
