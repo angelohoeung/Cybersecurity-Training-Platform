@@ -126,7 +126,7 @@ const InteractivePlayground = () => {
   };
 
   return (
-    <div style={{ textAlign: "left", margin: "20px" }}>
+    <div style={{ textAlign: "left"}}>
       <div>
         <label>
           Regex Pattern:
@@ -149,10 +149,10 @@ const InteractivePlayground = () => {
           />
         </label>
       </div>
+      {benchmarkResult && <p>{benchmarkResult}</p>}
       <button onClick={runBenchmark} style={{ marginTop: "10px" }}>
         Test Pattern
       </button>
-      {benchmarkResult && <p>{benchmarkResult}</p>}
     </div>
   );
 };
