@@ -25,6 +25,10 @@ const Home = ({ token }) => {
         navigate('/regexinjection/info');
     }
 
+        function handleAttackFive() {
+        navigate('/emailspoofingHome');
+    }
+
     function handleVideos() {
         navigate('/videos');
     }
@@ -81,6 +85,10 @@ const Home = ({ token }) => {
                         <div className="card" onClick={handleAttackFour}>
                             <img src="images/regexinjection.png" alt="Regex Injection" />
                             <button>Regex Injection</button>
+                        </div>
+                        <div className="card" onClick={handleAttackFive}>
+                            <img src="images/spoofing.png" alt="Spoofing" />
+                            <button>Email Spoofing</button>
                         </div>
                     </div>
                     <button className="logout" onClick={handleLogout}>Logout</button>
