@@ -22,7 +22,7 @@ const Home = ({ token }) => {
     }
 
     function handleAttackFour() {
-        navigate('/regextinjection/info');
+        navigate('/regexinjection/info');
     }
 
     function handleVideos() {
