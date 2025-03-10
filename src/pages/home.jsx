@@ -25,8 +25,12 @@ const Home = ({ token }) => {
         navigate('/regexinjection/home');
     }
 
-        function handleAttackFive() {
+    function handleAttackFive() {
         navigate('/emailspoofingHome');
+    }
+    
+    function handleAttackSix() {
+        navigate('/XssHome');
     }
 
     function handleVideos() {
@@ -89,6 +93,10 @@ const Home = ({ token }) => {
                         <div className="card" onClick={handleAttackFive}>
                             <img src="images/spoofing.png" alt="Spoofing" />
                             <button>Email Spoofing</button>
+                        </div>
+                         <div className="card" onClick={handleAttackSix}>
+                            <img src="images/spoofing.png" alt="Spoofing" />
+                            <button>Cross-Site Scripting</button>
                         </div>
                     </div>
                     <button className="logout" onClick={handleLogout}>Logout</button>
