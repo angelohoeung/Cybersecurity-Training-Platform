@@ -20,6 +20,11 @@ const Home = ({ token }) => {
     function handleAttackThree() {
         navigate('/Malvertisinghome');
     }
+
+    function handleAttackFour() {
+        navigate('/regextinjection/info');
+    }
+
     function handleVideos() {
         navigate('/videos');
     }
@@ -72,6 +77,10 @@ const Home = ({ token }) => {
                         <div className="card" onClick={handleAttackThree}>
                             <img src="images/aipic2.png" alt="AI Attack" />
                             <button>Malvertising</button>
+                        </div>
+                        <div className="card" onClick={handleAttackFour}>
+                            <img src="images/regexinjection.png" alt="Regex Injection" />
+                            <button>Regex Injection</button>
                         </div>
                     </div>
                     <button className="logout" onClick={handleLogout}>Logout</button>
