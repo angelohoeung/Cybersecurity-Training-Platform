@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { SignUp, Login, Home, AttackOne, AttackTwo, AttackThree, SqlStart, SqlSecond, ClickjackingDemo, PreventionInfo, SqlThird, SqlFourth, SqlFifth, SqlSixth, SqlSeventh, SqlEigth, SqlNinth, SqlTenth, SqlEleventh, SqlQuiz, SqlPrevention, Malprevention, Malvertisingdemo, Malvertisinghome, Videos, Lessons, About, Malvertisinginfo } from './pages'; // Import SqlThird
+import RegexInjectionHome from './pages/RegexInjection/RegexInjectionHome';
+import RegexInjectionDemo from './pages/RegexInjection/RegexInjectionDemo';
+import RegexInjectionCertificate from './pages/RegexInjection/RegexInjectionCertificate';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -45,6 +48,9 @@ const App = () => {
         <Route path={'/Malvertisingdemo'} element={<Malvertisingdemo/>} />
         <Route path={'/Malvertisinginfo'} element={<Malvertisinginfo/>} />
         <Route path={'/Malprevention'} element={<Malprevention/>} />
+        <Route path="/regexinjection/home" element={<RegexInjectionHome token={token} />} />
+        <Route path="/regexinjection/demo" element={<RegexInjectionDemo token={token} />} />
+        <Route path="/regexinjection/certificate" element={<RegexInjectionCertificate token={token} />} />
         <Route path={'/Videos'} element={<Videos/>} />
         <Route path={'/Lessons'} element={<Lessons/>} />
         <Route path={'/About'} element={<About/>} />
