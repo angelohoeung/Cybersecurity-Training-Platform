@@ -107,6 +107,56 @@ const QuizComponent = ({ onQuizComplete }) => {
   );
 };
 
+const InteractivePlayground = () => {
+  const [pattern, setPattern] = useState("");
+  const [testString, setTestString] = useState("");
+  const [benchmarkResult, setBenchmarkResult] = useState("");
+
+  const runBenchmark = () => {
+    try {
+      const regex = new RegExp(pattern);
+      const startTime = performance.now();
+      regex.test(testString);
+      const endTime = performance.now();
+      const duration = Math.round(endTime - startTime);
+      setBenchmarkResult(`Execution took approximately ${duration} ms`);
+    } catch (error) {
+      setBenchmarkResult("Invalid regex pattern");
+    }
+  };
+
+  return (
+    <div style={{ textAlign: "left", margin: "20px" }}>
+      <div>
+        <label>
+          Regex Pattern:
+          <input
+            type="text"
+            value={pattern}
+            onChange={(e) => setPattern(e.target.value)}
+            style={{ marginLeft: "10px", width: "300px" }}
+          />
+        </label>
+      </div>
+      <div style={{ marginTop: "10px" }}>
+        <label>
+          Test String:
+          <input
+            type="text"
+            value={testString}
+            onChange={(e) => setTestString(e.target.value)}
+            style={{ marginLeft: "10px", width: "300px" }}
+          />
+        </label>
+      </div>
+      <button onClick={runBenchmark} style={{ marginTop: "10px" }}>
+        Test Pattern
+      </button>
+      {benchmarkResult && <p>{benchmarkResult}</p>}
+    </div>
+  );
+};
+
 const RegexInjectionDemo = () => {
   const navigate = useNavigate();
   const [step, setStep] = useState(0);
@@ -136,8 +186,19 @@ const RegexInjectionDemo = () => {
   const steps = [
     {
       title: "Introduction to Regex Injection",
-      content:
-        "This demo explains how attackers exploit unsanitized regex inputs to compromise systems.",
+      content: (
+        <div>
+          <p>
+            Regular expressions (regex) are patterns used to match character
+            combinations in strings. They are widely used for search, replace,
+            and input validation.
+          </p>
+          <p>
+            This demo explains how attackers exploit unsanitized regex inputs to
+            compromise systems.
+          </p>
+        </div>
+      ),
       buttonText: "Start Demo",
     },
     {
@@ -169,7 +230,7 @@ const RegexInjectionDemo = () => {
           </p>
         </div>
       ),
-      codeSnippet: `const userInput = "/(a+)+$/";
+      codeSnippet: `const userInput = /(a+)+$/;
 new RegExp(userInput).test("aaaaaaaaaaaaaaaaaaa");`,
       explanation: (
         <div className="code-explanation">
@@ -227,6 +288,27 @@ new RegExp(userInput).test("aaaaaaaaaaaaaaaaaaa");`,
           </p>
         </div>
       ),
+      codeSnippet: `// Benchmarking example for vulnerable regex
+const vulnerableRegex = /(a+)+$/;
+const testString = "aaaaaaaaaaaaaaaaaaa!"; // designed to fail and cause backtracking
+console.time("Vulnerable Regex Execution");
+vulnerableRegex.test(testString);
+console.timeEnd("Vulnerable Regex Execution");
+
+// Benchmarking a safe regex for comparison
+const safeRegex = /^a+$/;
+console.time("Safe Regex Execution");
+safeRegex.test(testString);
+console.timeEnd("Safe Regex Execution");`,
+      explanation: (
+        <div className="code-explanation">
+          <p>
+            The above benchmarks demonstrate that the vulnerable regex can take
+            significantly longer to execute than the safe regex, highlighting
+            the risks associated with regex injection.
+          </p>
+        </div>
+      ),
       buttonText: "Prevention Techniques",
     },
     {
@@ -272,7 +354,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       ),
       buttonText: "Interactive Demo",
     },
-    {
+    { // TODO: fix explanation, "(a+)+" should become "\(a\+\)\+"
       title: "Interactive Demo: Regex Sanitizer",
       content: (
         <div>
@@ -281,8 +363,20 @@ console.log(safeRegex.test("example. * user+ input?"));`,
           </p>
         </div>
       ),
+      buttonText: "Next",
+    },
+    {
+      title: "Interactive Regex Playground",
+      content: (
+        <div>
+          <p>
+            Experiment with your own regex patterns and input strings. Enter a
+            regex pattern and a test string to see how long it takes to execute.
+          </p>
+          <InteractivePlayground />
+        </div>
+      ),
       buttonText: "Quiz",
-      // This step will display the toggle image and button.
     },
     {
       title: "Quiz: Test Your Knowledge",
@@ -354,7 +448,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       {/* Render images for each step */}
       {step === 0 && (
         <img
-          src="images/regex_intro.png"
+          src="../images/regex_intro.png"
           alt="Regex Injection Introduction"
           className="imageFadeIn"
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
@@ -370,7 +464,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       )}
       {/* {step === 2 && (
         <img
-          src="images/regex_code.png"
+          src="../images/regex_code.png"
           alt="Vulnerable Regex Code"
           className="imageFadeIn"
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
@@ -378,7 +472,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       )} */}
       {step === 3 && (
         <img
-          src="images/regex_consequences.png"
+          src="../images/regex_consequences.png"
           alt="Consequences of Regex Injection"
           className="imageFadeIn"
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
@@ -386,7 +480,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       )}
       {/* {step === 4 && (
         <img
-          src="images/regex_prevention.png"
+          src="../images/regex_prevention.png"
           alt="Regex Injection Prevention Techniques"
           className="imageFadeIn"
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
