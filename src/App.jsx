@@ -3,6 +3,11 @@ import { SignUp, Login, Home, AttackOne, AttackTwo, AttackThree, SqlStart, SqlSe
 import RegexInjectionHome from './pages/RegexInjection/RegexInjectionHome';
 import RegexInjectionDemo from './pages/RegexInjection/RegexInjectionDemo';
 import RegexInjectionCertificate from './pages/RegexInjection/RegexInjectionCertificate';
+import XssHome from './pages/CrossSiteScripting/XssHome';
+import XssDemo from './pages/CrossSiteScripting/XssDemo';
+import XssMore from './pages/CrossSiteScripting/XssMore';
+import XssPrevention from './pages/CrossSiteScripting/XssPrevention';
+import XssQuiz from './pages/CrossSiteScripting/XssQuiz';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -51,6 +56,11 @@ const App = () => {
         <Route path="/regexinjection/home" element={<RegexInjectionHome token={token} />} />
         <Route path="/regexinjection/demo" element={<RegexInjectionDemo token={token} />} />
         <Route path="/regexinjection/certificate" element={<RegexInjectionCertificate token={token} />} />
+        <Route path="/CrossSiteScripting/XssHome" element={<XssHome token={token} />} />
+        <Route path="/CrossSiteScripting/XssDemo" element={<XssDemo token={token} />} />
+        <Route path="/CrossSiteScripting/XssPrevention" element={<XssPrevention token={token} />} />
+        <Route path="/CrossSiteScripting/XssMore" element={<XssMore token={token} />} />
+        <Route path="/CrossSiteScripting/XssQuiz" element={<XssQuiz token={token} />} />
         <Route path={'/Videos'} element={<Videos/>} />
         <Route path={'/Lessons'} element={<Lessons/>} />
         <Route path={'/About'} element={<About/>} />
