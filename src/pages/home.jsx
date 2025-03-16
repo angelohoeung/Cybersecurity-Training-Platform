@@ -30,7 +30,7 @@ const Home = ({ token }) => {
     }
     
     function handleAttackSix() {
-        navigate('/XssHome');
+        navigate('/CrossSiteScripting/XssHome');
     }
 
     function handleVideos() {
