@@ -26,7 +26,7 @@ const Home = ({ token }) => {
     }
 
     function handleAttackFive() {
-        navigate('/emailspoofingHome');
+        navigate('/EmailspoofHome');
     }
     
     function handleAttackSix() {
