@@ -9,10 +9,10 @@ const RegexInjectionCertificate = () => {
   };
 
   const handleDownloadCertificate = () => {
-    const certificateUrl = "../images/regexcertificate.png";
+    const certificateUrl = "../images/regexCertificate.png";
     const link = document.createElement("a");
     link.href = certificateUrl;
-    link.download = "regexcertificate.png";
+    link.download = "regexCertificate.png";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -26,7 +26,7 @@ const RegexInjectionCertificate = () => {
       <h3 className="title">Congratulations!</h3>
       <div style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}>
         <img
-          src="../images/regexcertificate.png"
+          src="../images/regexCertificate.png"
           alt="certificate"
           className="imageFadeIn"
           style={{ maxWidth: "100%" }}
