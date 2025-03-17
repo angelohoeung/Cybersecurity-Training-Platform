@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './xssPrevention.css'; // Ensure correct styling
+import './EmailspoofQuiz.css'; // Ensure correct styling
 
 const EmailspoofQuiz = () => {
   const navigate = useNavigate();
