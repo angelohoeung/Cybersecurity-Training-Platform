@@ -8,6 +8,15 @@ import XssDemo from './pages/CrossSiteScripting/XssDemo';
 import XssMore from './pages/CrossSiteScripting/XssMore';
 import XssPrevention from './pages/CrossSiteScripting/XssPrevention';
 import XssQuiz from './pages/CrossSiteScripting/XssQuiz';
+import EmailspoofHome from './pages/EmailspoofHome'; 
+import EmailspoofDemo from './pages/EmailspoofDemo'; 
+import EmailspoofDemo2 from './pages/EmailspoofDemo2'; 
+import EmailspoofDemo3 from './pages/EmailspoofDemo3'; 
+import EmailspoofDemo4 from './pages/EmailspoofDemo4'; 
+import EmailspoofDemo5 from './pages/EmailspoofDemo5'; 
+import EmailspoofDemo6 from './pages/EmailspoofDemo6'; 
+import EmailspoofQuiz from './pages/EmailspoofQuiz'; 
+
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -61,6 +70,16 @@ const App = () => {
         <Route path="/CrossSiteScripting/XssPrevention" element={<XssPrevention token={token} />} />
         <Route path="/CrossSiteScripting/XssMore" element={<XssMore token={token} />} />
         <Route path="/CrossSiteScripting/XssQuiz" element={<XssQuiz token={token} />} />
+
+        <Route path={'/EmailspoofHome'} element={<EmailspoofHome />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo'} element={<EmailspoofDemo />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo2'} element={<EmailspoofDemo2 />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo3'} element={<EmailspoofDemo3 />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo4'} element={<EmailspoofDemo4 />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo5'} element={<EmailspoofDemo5 />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo6'} element={<EmailspoofDemo6 />} />  {/*added*/}
+        <Route path={'/EmailspoofQuiz'} element={<EmailspoofQuiz />} />  {/*added*/}
+        
         <Route path={'/Videos'} element={<Videos/>} />
         <Route path={'/Lessons'} element={<Lessons/>} />
         <Route path={'/About'} element={<About/>} />
