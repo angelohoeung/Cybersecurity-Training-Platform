@@ -13,11 +13,13 @@ Cybersecurity training platform project for COMP-4990.
 
 ## Requirements
 
-- [Node](https://nodejs.org/en/download/package-manager)
+- [Node.js](https://nodejs.org/en/download)
 
 ## Setup
 
 ```bash
+git clone https://github.com/angelohoeung/Cybersecurity-Training-Platform.git
+cd Cybersecurity-Training-Platform
 npm install
 npm run dev
 ```
@@ -31,4 +33,4 @@ npm run dev
 
 - [ ] Refactor/improve
 - [x] Setup Supabase (PostgreSQL) or use another database
-- [ ] Add more courses
+- [x] Add more courses
