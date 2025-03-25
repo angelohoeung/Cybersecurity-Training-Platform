@@ -15,7 +15,7 @@ import EmailspoofDemo3 from './pages/EmailspoofDemo3';
 import EmailspoofDemo4 from './pages/EmailspoofDemo4'; 
 import EmailspoofDemo5 from './pages/EmailspoofDemo5'; 
 import EmailspoofDemo6 from './pages/EmailspoofDemo6'; 
-import EmailspoofDemo7 from './pages/EmailspoofDemo7'; 
+import EmailspoofDemo7 from './pages/EmailspoofDemo7';
 import EmailspoofQuiz from './pages/EmailspoofQuiz'; 
 
 
