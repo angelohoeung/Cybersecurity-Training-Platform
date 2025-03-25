@@ -78,4 +78,22 @@
   gap: 10px;
 }
 
+.light-grey-box {
+  background-color: #f5f5f5; /* Light grey */
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
 
+/* Styling for the image container */
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the image */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.toggle-image {
+  width: 700px;  /* Set a smaller size for the images */
+  height: auto;  /* Keep the aspect ratio */
+  cursor: pointer;
+}
