@@ -107,26 +107,107 @@ const QuizComponent = ({ onQuizComplete }) => {
   );
 };
 
+const RegexBenchmarkDemo = () => {
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [result, setResult] = useState("");
+
+  const runTest = (mode) => {
+    setIsProcessing(true);
+    setResult("");
+
+    try {
+      const worker = new Worker(new URL("./RegexWorker.js", import.meta.url));
+      const pattern = mode === "vulnerable" ? "(a+)+$" : "a+$";
+      const testString = "aaaaaaaaaaaaaaaaaaaaaaaa!"; // designed to cause backtracking
+
+      worker.postMessage({ pattern, testString });
+
+      worker.onmessage = (e) => {
+        if (e.data.error) {
+          setResult(`Error: ${e.data.error}`);
+        } else {
+          setResult(
+            `Test completed. Execution took approximately ${e.data.duration} ms.`
+          );
+        }
+        setIsProcessing(false);
+        worker.terminate();
+      };
+    } catch (error) {
+      setResult("Error creating worker.");
+      setIsProcessing(false);
+    }
+  };
+
+  return (
+    <div style={{ marginTop: "20px", textAlign: "left" }}>
+      <p>
+        <strong>Mitigation Tip:</strong> Only allow non-complex regex patterns
+        and consider using timeouts.
+      </p>
+      <p>Test the regex vulnerability:</p>
+      <button
+        onClick={() => runTest("vulnerable")}
+        disabled={isProcessing}
+        style={{ marginLeft: "10px" }}
+      >
+        Run Vulnerable Test
+      </button>
+      <button
+        onClick={() => runTest("safe")}
+        disabled={isProcessing}
+        style={{ marginLeft: "10px" }}
+      >
+        Run Safe Test
+      </button>
+      {isProcessing ? <p>Processing…</p> : result && <p>{result}</p>}
+    </div>
+  );
+};
+
 const InteractivePlayground = () => {
   const [pattern, setPattern] = useState("");
   const [testString, setTestString] = useState("");
   const [benchmarkResult, setBenchmarkResult] = useState("");
+  const [timeoutValue, setTimeoutValue] = useState(1000); // timeout in ms
 
   const runBenchmark = () => {
+    setBenchmarkResult("Running regex test...");
     try {
-      const regex = new RegExp(pattern);
-      const startTime = performance.now();
-      regex.test(testString);
-      const endTime = performance.now();
-      const duration = Math.round(endTime - startTime);
-      setBenchmarkResult(`Execution took approximately ${duration} ms`);
+      const worker = new Worker(new URL("./RegexWorker.js", import.meta.url));
+      worker.postMessage({ pattern, testString });
+
+      let finished = false;
+      const timeoutId = setTimeout(() => {
+        if (!finished) {
+          worker.terminate();
+          setBenchmarkResult(`Execution timed out after ${timeoutValue} ms.`);
+        }
+      }, timeoutValue);
+
+      worker.onmessage = (e) => {
+        finished = true;
+        clearTimeout(timeoutId);
+        if (e.data.error) {
+          setBenchmarkResult(`Error: ${e.data.error}`);
+        } else {
+          setBenchmarkResult(
+            `Execution took approximately ${e.data.duration} ms.`
+          );
+        }
+        worker.terminate();
+      };
     } catch (error) {
       setBenchmarkResult("Invalid regex pattern");
     }
   };
 
   return (
-    <div style={{ textAlign: "left"}}>
+    <div style={{ textAlign: "left" }}>
+      <p>
+        <strong>Mitigation Tip:</strong> Avoid complex regex patterns and adjust
+        the timeout as needed.
+      </p>
       <div>
         <label>
           Regex Pattern:
@@ -135,6 +216,7 @@ const InteractivePlayground = () => {
             value={pattern}
             onChange={(e) => setPattern(e.target.value)}
             style={{ marginLeft: "10px", width: "300px" }}
+            placeholder="Enter non-complex regex"
           />
         </label>
       </div>
@@ -146,6 +228,17 @@ const InteractivePlayground = () => {
             value={testString}
             onChange={(e) => setTestString(e.target.value)}
             style={{ marginLeft: "10px", width: "300px" }}
+          />
+        </label>
+      </div>
+      <div style={{ marginTop: "10px" }}>
+        <label>
+          Timeout (ms):
+          <input
+            type="number"
+            value={timeoutValue}
+            onChange={(e) => setTimeoutValue(parseInt(e.target.value, 10))}
+            style={{ marginLeft: "10px", width: "150px" }}
           />
         </label>
       </div>
@@ -193,6 +286,35 @@ const RegexInjectionDemo = () => {
             combinations in strings. They are widely used for search, replace,
             and input validation.
           </p>
+          <p>Here are some regex examples:</p>
+          <ul style={{ textAlign: "left" }}>
+            <li>
+              <code>\d*</code>: Matches a string that has zero or more digits.
+            </li>
+            <li>
+              <code>\d+</code>: Matches a string that has one or more digits.
+            </li>
+            <li>
+              <code>\d?</code>: Matches a string that has zero or one digit.
+            </li>
+            <li>
+              <code>\d&#123;3&#125;</code>: Matches a string that has exactly 3
+              digits.
+            </li>
+            <li>
+              <code>\d&#123;2,&#125;</code>: Matches a string that has 2 or more
+              digits.
+            </li>
+            <li>
+              <code>\d&#123;2,5&#125;</code>: Matches a string that has 2 up to
+              5 digits.
+            </li>
+            <li>
+              <code>a(\d&#123;2&#125;)*</code>: Matches a string that starts
+              with &apos;a&apos; followed by zero or more occurrences of exactly
+              2 digits.
+            </li>
+          </ul>
           <p>
             This demo explains how attackers exploit unsanitized regex inputs to
             compromise systems.
@@ -286,17 +408,18 @@ new RegExp(userInput).test("aaaaaaaaaaaaaaaaaaa");`,
             some cases, even allow remote code execution. It’s critical to
             validate and sanitize regex inputs.
           </p>
+          <RegexBenchmarkDemo />
         </div>
       ),
       codeSnippet: `// Benchmarking example for vulnerable regex
 const vulnerableRegex = /(a+)+$/;
-const testString = "aaaaaaaaaaaaaaaaaaa!"; // designed to fail and cause backtracking
+const testString = "aaaaaaaaaaaaaaaaaaaaaaaa!"; // designed to fail and cause backtracking
 console.time("Vulnerable Regex Execution");
 vulnerableRegex.test(testString);
 console.timeEnd("Vulnerable Regex Execution");
 
 // Benchmarking a safe regex for comparison
-const safeRegex = /^a+$/;
+const safeRegex = /a+$/;
 console.time("Safe Regex Execution");
 safeRegex.test(testString);
 console.timeEnd("Safe Regex Execution");`,
@@ -354,7 +477,8 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       ),
       buttonText: "Interactive Demo",
     },
-    { // TODO: fix explanation, "(a+)+" should become "\(a\+\)\+"
+    {
+      // TODO: fix explanation, "(a+)+" should become "\(a\+\)\+"
       title: "Interactive Demo: Regex Sanitizer",
       content: (
         <div>
@@ -446,14 +570,14 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       )}
 
       {/* Render images for each step */}
-      {step === 0 && (
+      {/* {step === 0 && (
         <img
           src="../images/regex_intro.png"
           alt="Regex Injection Introduction"
           className="imageFadeIn"
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
         />
-      )}
+      )} */}
       {step === 1 && (
         <img
           src="../images/regex_threat.png"
@@ -470,14 +594,14 @@ console.log(safeRegex.test("example. * user+ input?"));`,
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
         />
       )} */}
-      {step === 3 && (
+      {/* {step === 3 && (
         <img
           src="../images/regex_consequences.png"
           alt="Consequences of Regex Injection"
           className="imageFadeIn"
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
         />
-      )}
+      )} */}
       {/* {step === 4 && (
         <img
           src="../images/regex_prevention.png"

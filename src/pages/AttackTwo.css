@@ -56,4 +56,50 @@
   margin-left: auto;
   margin-right: auto;
 }
+ /* Css for Email Spoof*/
+.spoof {
+  background-color: red !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
+.legit {
+  background-color: green !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.light-grey-box {
+  background-color: #f5f5f5; /* Light grey */
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Styling for the image container */
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the image */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.toggle-image {
+  width: 700px;  /* Set a smaller size for the images */
+  height: auto;  /* Keep the aspect ratio */
+  cursor: pointer;
+}
+
+.left-aligned-paragraph {
+  text-align: left; /* Align text to the left */
+  margin-left: 0;   /* Ensure no extra left margin */
+  padding-left: 0;  /* Ensure no extra left padding */
+}
