@@ -97,3 +97,9 @@
   height: auto;  /* Keep the aspect ratio */
   cursor: pointer;
 }
+
+.left-aligned-paragraph {
+  text-align: left; /* Align text to the left */
+  margin-left: 0;   /* Ensure no extra left margin */
+  padding-left: 0;  /* Ensure no extra left padding */
+}
