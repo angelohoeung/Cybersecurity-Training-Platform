@@ -15,6 +15,7 @@ import EmailspoofDemo3 from './pages/EmailspoofDemo3';
 import EmailspoofDemo4 from './pages/EmailspoofDemo4'; 
 import EmailspoofDemo5 from './pages/EmailspoofDemo5'; 
 import EmailspoofDemo6 from './pages/EmailspoofDemo6'; 
+import EmailspoofDemo7 from './pages/EmailspoofDemo7'; 
 import EmailspoofQuiz from './pages/EmailspoofQuiz'; 
 
 
@@ -79,6 +80,7 @@ const App = () => {
         <Route path={'/EmailspoofDemo4'} element={<EmailspoofDemo4 />} />  {/*added*/}
         <Route path={'/EmailspoofDemo5'} element={<EmailspoofDemo5 />} />  {/*added*/}
         <Route path={'/EmailspoofDemo6'} element={<EmailspoofDemo6 />} />  {/*added*/}
+        <Route path={'/EmailspoofDemo7'} element={<EmailspoofDemo7 />} />  {/*added*/}
         <Route path={'/EmailspoofQuiz'} element={<EmailspoofQuiz />} />  {/*added*/}
         
         <Route path={'/Videos'} element={<Videos/>} />
