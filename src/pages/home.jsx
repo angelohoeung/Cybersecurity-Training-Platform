@@ -33,6 +33,10 @@ const Home = ({ token }) => {
         navigate('/XssHome');
     }
 
+    function handleAttackSeven() {
+        navigate('/dosattack/home');
+    }    
+
     function handleVideos() {
         navigate('/videos');
     }
@@ -97,6 +101,10 @@ const Home = ({ token }) => {
                          <div className="card" onClick={handleAttackSix}>
                             <img src="images/xss.jpg" alt="Spoofing" />
                             <button>Cross-Site Scripting</button>
+                        </div>
+                        <div className="card" onClick={handleAttackSeven}>
+                            <img src="images/ddos-attack.png" alt="Denial of Service Attacks" />
+                            <button>Denial of Service</button>
                         </div>
                     </div>
                     <button className="logout" onClick={handleLogout}>Logout</button>

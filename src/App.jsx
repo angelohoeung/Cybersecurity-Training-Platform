@@ -4,6 +4,9 @@ import RegexInjectionHome from './pages/RegexInjection/RegexInjectionHome';
 import RegexInjectionDemo from './pages/RegexInjection/RegexInjectionDemo';
 import RegexInjectionCertificate from './pages/RegexInjection/RegexInjectionCertificate';
 import { Routes, Route } from 'react-router-dom';
+import DoSAttackHome from "./pages/DoSAttack/DoSAttackHome";
+import DoSAttackDemo from "./pages/DoSAttack/DoSAttackDemo";
+import DoSAttackCertificate from "./pages/DoSAttack/DoSAttackCertificate";
 
 const App = () => {
   const [token, setToken] = useState(false);
@@ -54,6 +57,9 @@ const App = () => {
         <Route path={'/Videos'} element={<Videos/>} />
         <Route path={'/Lessons'} element={<Lessons/>} />
         <Route path={'/About'} element={<About/>} />
+        <Route path="/dosattack/home" element={<DoSAttackHome />} />
+        <Route path="/dosattack/demo" element={<DoSAttackDemo />} />
+        <Route path="/dosattack/certificate" element={<DoSAttackCertificate />} />
       </Routes>
     </div>
 
