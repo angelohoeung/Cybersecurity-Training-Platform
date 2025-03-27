@@ -25,25 +25,46 @@ const About = () => {
           <h3 className="about-section-header">Contributors</h3>
           <div className="contributor">
             <h4 className="contributor-name">Luke Knehler</h4>
-            <img src="images/Luke2.png" alt="Luke pic" className="text" style={{ width: '200px', height: 'auto' }} />
             <p className="contributor-description">
               Luke Knehler, the Project Manager of the platform, worked on the Clickjacking demo, as well as working on the front-end of the website and the graphic design.
             </p>
             </div>
             <div className="contributor">
               <h4 className="contributor-name">Danny Duronio</h4>
-              <img src="images/danny.png" alt="Danny pic" className="text" style={{ width: '200px', height: 'auto' }} />
               <p className="contributor-description">
                 Danny Duronio, the lead developer in the project, created the SQL Injection Demo, as well as being responsible for the back-end development of the website.
               </p>
             </div>
             <div className="contributor">
               <h4 className="contributor-name">Tayo Alalade</h4>
-              <img src="images/Tayo.png" alt="Tayo pic" className="text" style={{ width: '200px', height: 'auto' }} />
               <p className="contributor-description">
               Tayo Alalade contributed to both front-end and back-end development, and developed the Malvertising Demo, showcasing Artificial Intelligence capabilities.
               </p>
           </div>
+          <div className="contributor">
+              <h4 className="contributor-name">Angie Doka</h4>
+              <p className="contributor-description">
+              Angie Doka played a key role in both content development and technical implementation, creating the Email Spoofing Cyberthreat page to illustrate the risks of email-based attacks and phishing tactics.
+              </p>
+            </div>
+            <div className="contributor">
+              <h4 className="contributor-name">Gabriela Oljacic</h4>
+              <p className="contributor-description">
+              Gabriela Oljacic contributed to both the design and functionality of the Clickjacking Demo, developing an interactive showcase that highlights the dangers of hidden UI redirection and deceptive web elements.
+              </p>
+            </div>
+            <div className="contributor">
+              <h4 className="contributor-name">Angelo Hoeung</h4>
+              <p className="contributor-description">
+              Angelo Hoeung developed the Regex Injection demo, demonstrating the security risks of improperly handled regular expressions, while also assisting in improving the overall quality of the website and enhancing code efficiency.
+              </p>
+            </div>
+            <div className="contributor">
+              <h4 className="contributor-name">Julio Costa Sanabria</h4>
+              <p className="contributor-description">
+              Julio Costa Sanabria developed the Denial of Service Demo, showcasing the impact of resource exhaustion attacks while highlighting mitigation strategies to enhance system resilience.
+              </p>
+            </div>
         </div>
 
         <div className="section">
