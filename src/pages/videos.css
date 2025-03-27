@@ -1,4 +1,9 @@
- body {
+.contributor-description {
+  margin-left: 20px; /* Adjust this value as needed */
+  padding-left: 20px; /* Alternatively, you can use padding */
+}
+
+body {
     background: linear-gradient(to top, #044068 0%, #00aeff 50%); 
   }
 
