@@ -13,6 +13,11 @@ const EmailspoofDemo4 = ({ token }) => {
   const [linkClicked, setLinkClicked] = useState(false);
   const [showTab, setShowTab] = useState(false);
 
+  function handleHome(){
+    sessionStorage.removeItem('token');
+    navigate('/home');
+  }
+  
   function handleCardNameChange(event) {
     setCardName(event.target.value);
   }
@@ -149,6 +154,7 @@ const EmailspoofDemo4 = ({ token }) => {
           )}
         </>
       )}
+     <button onClick={handleHome} className="button">Return Home</button>
     </div>
   );
 };
