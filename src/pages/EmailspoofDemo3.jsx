@@ -7,6 +7,11 @@ const EmailSpoofingDemo3 = () => {
   const [step, setStep] = useState(0);
   const [feedback, setFeedback] = useState('');
 
+  function handleHome(){
+    sessionStorage.removeItem('token');
+    navigate('/home');
+  }
+
   const emailExamples = [
     {
       image: '/images/EmailExampleOne.png',
@@ -71,10 +76,10 @@ const EmailSpoofingDemo3 = () => {
       {feedback && <p className="feedback">{feedback}</p>}
       
       <button onClick={handleNext} className="button">{step < emailExamples.length - 1 ? 'Next Email' : 'Finish Exercise'}</button>
+      <button onClick={handleHome} className="button">Return Home</button>
     </div>
   );
 };
 
 export default EmailSpoofingDemo3;
-
 
