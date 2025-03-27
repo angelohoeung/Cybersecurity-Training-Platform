@@ -119,6 +119,7 @@ const EmailspoofDemo7 = ({ token }) => {
       </div>
       
       <button onClick={handleNext} className="button">Continue to Quiz</button>
+      <button onClick={handleHome} className="button">Return to Home</button>
     </div>
   );
 };
