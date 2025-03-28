@@ -118,7 +118,7 @@ const Home = ({ token }) => {
                         <button style={{ background: 'none', border: 'none', color: '#fff', fontSize: '24px' }} onClick={handleVideos}>Videos</button>
                         <button style={{ background: 'none', border: 'none', color: '#fff', fontSize: '24px' }} onClick={handleAbout}>About</button>
                     </nav>
-                    <p className="copyright">CyberGuard © 2024</p>
+                    <p className="copyright">CyberGuard © 2025</p>
                 </footer>
             </div>
         </>

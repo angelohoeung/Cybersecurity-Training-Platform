@@ -56,7 +56,7 @@ const About = () => {
             <div className="contributor">
               <h4 className="contributor-name">Angelo Hoeung</h4>
               <p className="contributor-description">
-              Angelo Hoeung developed the Regex Injection demo, demonstrating the security risks of improperly handled regular expressions, while also assisting in improving the overall quality of the website and enhancing code efficiency.
+              Angelo Hoeung developed the Regex Injection demo, demonstrating the security risks of improperly handled regular expressions, developed email verification and deployment of the website, while also assisting in improving the overall quality of the website and enhancing code efficiency.
               </p>
             </div>
             <div className="contributor">
@@ -75,7 +75,7 @@ const About = () => {
         </div>
 
         <div className="section">
-          <p className="copyright-text">© 2024 CyberGuard. All rights reserved.</p>
+          <p className="copyright-text">© 2025 CyberGuard. All rights reserved.</p>
         </div>
 
         <button onClick={handleGoBack} className="button-go-back">
