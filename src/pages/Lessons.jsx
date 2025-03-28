@@ -53,14 +53,14 @@ const Lessons = () => {
         </div>
 
       {/* Card for Attack Six */}
-        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+        <div className="card" onClick={() => handleNavigateToAttack('CrossSiteScripting/XssHome')}>
           <img src="images/xss.jpg" alt="Cross-Site Scripting" />
           <button>Cross-Site Scripting</button>
         </div>
 
 
       {/* Card for Attack Seven */}
-        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+        <div className="card" onClick={() => handleNavigateToAttack('dosattack/home')}>
           <img src="images/ddos-attack.png" alt="Denial of Service" />
           <button>Denial of Service</button>
         </div>
