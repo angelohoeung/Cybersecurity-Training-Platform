@@ -25,6 +25,11 @@ const Videos = () => {
       id: 'video3',
       title: 'Malvertising',
       embedUrl: 'https://www.youtube.com/embed/NPXAd6y8_jw?si=MvINLXwrnIO_57Z1', 
+    },
+     {
+      id: 'video4',
+      title: 'Cross-Site Scripting',
+      embedUrl: 'https://youtube.com/embed/VyMb3KFuP9Q', 
     }
   ];
 
