@@ -31,10 +31,15 @@ const Videos = () => {
       title: 'Email Spoofing',
       embedUrl: 'https://youtube.com/embed/dHQIJijyGr8', 
     },
-     {
+    {
       id: 'video5',
       title: 'Cross-Site Scripting',
       embedUrl: 'https://youtube.com/embed/VyMb3KFuP9Q', 
+    },
+    {
+      id: 'video6',
+      title: 'Regex Injection Tutorial',
+      embedUrl: 'https://www.youtube.com/embed/QqTsF3lrg-w',
     }
   ];
 
