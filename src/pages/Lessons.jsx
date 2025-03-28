@@ -33,8 +33,8 @@ const Lessons = () => {
         </div>
 
         {/* Card for Attack Three */}
-        <div className="card" onClick={() => handleNavigateToAttack('Deepfakehome')}>
-          <img src="images/aipic2.png" alt="AI Attack" />
+        <div className="card" onClick={() => handleNavigateToAttack('Malvertisinghome')}>
+          <img src="images/aipic2.png" alt="Malvertising" />
           <button>Malvertising</button>
         </div>
 
