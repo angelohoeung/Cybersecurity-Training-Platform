@@ -95,8 +95,11 @@ const EmailspoofDemo6 = ({ token }) => {
         </div>
       </div>
       
-      <button onClick={handleNext} className="button">Continue</button>
-      <button onClick={handleHome} className="button">Return to Home</button>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "5px", marginTop: "20px" }}>
+        <button onClick={handleNext} className="button" style={{ width: "900px", height: "37px", fontSize: "14px", textAlign: "center" }}>Continue</button>
+        <button onClick={handleHome} className="button" style={{ width: "900px", height: "37px", fontSize: "14px", textAlign: "center" }}>Return Home</button>
+      </div>
+      
     </div>
   );
 };
