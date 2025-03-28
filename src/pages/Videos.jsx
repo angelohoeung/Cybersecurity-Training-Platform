@@ -26,8 +26,13 @@ const Videos = () => {
       title: 'Malvertising',
       embedUrl: 'https://www.youtube.com/embed/NPXAd6y8_jw?si=MvINLXwrnIO_57Z1', 
     },
-     {
+    {
       id: 'video4',
+      title: 'Email Spoofing',
+      embedUrl: 'https://youtube.com/embed/dHQIJijyGr8', 
+    },
+     {
+      id: 'video5',
       title: 'Cross-Site Scripting',
       embedUrl: 'https://youtube.com/embed/VyMb3KFuP9Q', 
     }
