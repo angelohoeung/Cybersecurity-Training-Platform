@@ -41,27 +41,27 @@ const Lessons = () => {
 
         {/* Card for Attack Four */}
         <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
-          <img src="images/sqlinjection.png" alt="Regex Injection" />
+          <img src="images/regexinjection.png" alt="Regex Injection" />
           <button>Regex Injection</button>
         </div>
 
 
       {/* Card for Attack Five */}
        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
-          <img src="images/sqlinjection.png" alt="Email Spoofing" />
+          <img src="images/spoofing.png" alt="Email Spoofing" />
           <button>Email Spoofing</button>
         </div>
 
       {/* Card for Attack Six */}
         <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
-          <img src="images/sqlinjection.png" alt="Cross-Site Scripting" />
+          <img src="images/xss.jpg" alt="Cross-Site Scripting" />
           <button>Cross-Site Scripting</button>
         </div>
 
 
       {/* Card for Attack Seven */}
         <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
-          <img src="images/sqlinjection.png" alt="Denial of Service" />
+          <img src="images/ddos-attack.png" alt="Denial of Service" />
           <button>Denial of Service</button>
         </div>
 
