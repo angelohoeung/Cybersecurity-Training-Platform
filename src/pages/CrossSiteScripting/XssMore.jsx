@@ -13,6 +13,10 @@ const XssMore = () => {
     navigate('/home');
   };
 
+  const handleBack = () => {
+    navigate('/CrossSiteScripting/XssDemo');
+  };
+
   return (
     <div className="container">
       <h3 className="title">Stored vs Reflected vs DOM-Based XSS</h3>
@@ -30,6 +34,7 @@ const XssMore = () => {
       </p>
 
       <button onClick={handleNext} className="button">XSS Prevention</button>
+      <button onClick={handleBack} className="button">Back to Demo</button>
 
       <button style={{ position: 'absolute', top: '10px', right: '10px' }} onClick={handleExit}>
         Exit
