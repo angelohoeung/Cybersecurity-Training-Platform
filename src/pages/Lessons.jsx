@@ -47,7 +47,7 @@ const Lessons = () => {
 
 
       {/* Card for Attack Five */}
-       <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+       <div className="card" onClick={() => handleNavigateToAttack('EmailspoofHome')}>
           <img src="images/spoofing.png" alt="Email Spoofing" />
           <button>Email Spoofing</button>
         </div>
