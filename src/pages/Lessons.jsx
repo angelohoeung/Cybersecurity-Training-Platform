@@ -40,7 +40,7 @@ const Lessons = () => {
 
 
         {/* Card for Attack Four */}
-        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+        <div className="card" onClick={() => handleNavigateToAttack('regexinjection/home')}>
           <img src="images/regexinjection.png" alt="Regex Injection" />
           <button>Regex Injection</button>
         </div>
