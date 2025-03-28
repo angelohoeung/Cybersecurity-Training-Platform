@@ -50,7 +50,7 @@ const About = () => {
             <div className="contributor">
               <h4 className="contributor-name">Gabriela Oljacic</h4>
               <p className="contributor-description">
-              Gabriela Oljacic contributed to both the design and functionality of the Clickjacking Demo, developing an interactive showcase that highlights the dangers of hidden UI redirection and deceptive web elements.
+              Gabriela Oljacic contributed to both the design and functionality of the Cross-Site Scripting Demo, developing an interactive showcase that highlights the dangers of hidden UI redirection and deceptive web elements.
               </p>
             </div>
             <div className="contributor">
