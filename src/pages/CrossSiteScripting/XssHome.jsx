@@ -23,7 +23,7 @@ const XssHome = () => {
       </p>
       <img src="../images/xssHome.png" alt="XSS Home" className="clickjacking-image"></img>
       <button onClick={handleNext} className="button">Click To Begin</button>
-      <button onClick={handleHome} className="button">Return Home</button>
+      <button onClick={handleHome} className="button">Home</button>
     </div>
   );
 };
