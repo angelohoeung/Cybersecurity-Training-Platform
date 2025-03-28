@@ -37,6 +37,35 @@ const Lessons = () => {
           <img src="images/aipic2.png" alt="AI Attack" />
           <button>Malvertising</button>
         </div>
+
+
+        {/* Card for Attack Four */}
+        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+          <img src="images/sqlinjection.png" alt="Regex Injection" />
+          <button>Regex Injection</button>
+        </div>
+
+
+      {/* Card for Attack Five */}
+       <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+          <img src="images/sqlinjection.png" alt="Email Spoofing" />
+          <button>Email Spoofing</button>
+        </div>
+
+      {/* Card for Attack Six */}
+        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+          <img src="images/sqlinjection.png" alt="Cross-Site Scripting" />
+          <button>Cross-Site Scripting</button>
+        </div>
+
+
+      {/* Card for Attack Seven */}
+        <div className="card" onClick={() => handleNavigateToAttack('attackone')}>
+          <img src="images/sqlinjection.png" alt="Denial of Service" />
+          <button>Denial of Service</button>
+        </div>
+
+
       </div>
       <button className="home-button" onClick={handleNavigateToHome}>Go Home</button>
     </div>
