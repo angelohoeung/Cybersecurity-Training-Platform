@@ -104,7 +104,7 @@ const XssQuiz = () => {
             className="clickjacking-image"
           />
           <button onClick={handleDownloadCertificate}>Download Certificate</button>
-          <button onClick={() => navigate('/xssPrevention')}>Proceed to Next Lesson</button>
+          <button onClick={() => navigate('/home')}>Return to Home</button>
         </>
       ) : (
         <>
