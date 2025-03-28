@@ -40,6 +40,11 @@ const Videos = () => {
       id: 'video6',
       title: 'Regex Injection Tutorial',
       embedUrl: 'https://www.youtube.com/embed/QqTsF3lrg-w',
+    },
+    {
+      id: 'video7',
+      title: 'DoS Attack Demo',
+      embedUrl: 'https://www.youtube.com/embed/FuCqEGR4nII',
     }
   ];
 
