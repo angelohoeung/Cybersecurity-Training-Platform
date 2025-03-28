@@ -69,7 +69,7 @@ const Videos = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleGoHome} className="button-home">Go Home</button> {/* "Home" button */}
+      <button onClick={handleGoHome} className="button-home">Go Home</button>
     </div>
   );
 };

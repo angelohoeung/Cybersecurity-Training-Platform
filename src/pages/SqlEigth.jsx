@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Sql.css'; // Import the CSS file
+import './Sql.css';
 
 const SqlEigth = ({ token }) => {
   let navigate = useNavigate();
   const [logsPrinted, setLogsPrinted] = useState(false);
-  const [showErrorMessage, setShowErrorMessage] = useState(true); // Initially set to true
+  const [showErrorMessage, setShowErrorMessage] = useState(true); // Initially true
   const [passwordValue, setPasswordValue] = useState('');
   const [usernameValue, setUsernameValue] = useState('');
 

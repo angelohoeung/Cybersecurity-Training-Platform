@@ -1,4 +1,3 @@
-// DoSAttackCertificate.jsx
 import { useNavigate } from "react-router-dom";
 import "../AttackTwo.css";
 

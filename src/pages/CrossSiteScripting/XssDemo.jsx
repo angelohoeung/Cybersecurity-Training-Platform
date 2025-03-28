@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../Sql.css'; // Keep the CSS file as it is
+import '../Sql.css';
 
 const XssDemo = () => {
   const [userInput, setUserInput] = useState('');

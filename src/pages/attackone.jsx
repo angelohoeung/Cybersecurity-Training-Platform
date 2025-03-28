@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AttackTwo.css'; // Import the provided CSS file
+import './AttackTwo.css';
 
 const AttackOne = ({ token }) => {
   const navigate = useNavigate();

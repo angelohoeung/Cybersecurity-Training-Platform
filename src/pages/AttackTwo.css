@@ -45,11 +45,10 @@
     height: auto; 
     margin-bottom: 20px; 
   }
-/* CSS */
 .select-below-iframe {
   margin-top: 20px;
   display: block;
-  width: 50%; /* Or a fixed width like 300px */
+  width: 50%;
   padding: 8px;
   border-color: #ccc;
   border-radius: 4px;
@@ -88,8 +87,8 @@
 /* Styling for the image container */
 .image-container {
   display: flex;
-  justify-content: center; /* Center the image */
-  margin-bottom: 15px; /* Space below the image */
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .toggle-image {
@@ -99,7 +98,7 @@
 }
 
 .left-aligned-paragraph {
-  text-align: left; /* Align text to the left */
-  margin-left: 0;   /* Ensure no extra left margin */
-  padding-left: 0;  /* Ensure no extra left padding */
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
 }

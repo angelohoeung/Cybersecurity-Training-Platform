@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../ClickjackingDemo'; // Ensure correct styling
+import '../ClickjackingDemo';
 
 const XssQuiz = () => {
   const navigate = useNavigate();

@@ -478,7 +478,6 @@ console.log(safeRegex.test("example. * user+ input?"));`,
       buttonText: "Interactive Demo",
     },
     {
-      // TODO: fix explanation, "(a+)+" should become "\(a\+\)\+"
       title: "Interactive Demo: Regex Sanitizer",
       content: (
         <div>
@@ -569,15 +568,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
         </>
       )}
 
-      {/* Render images for each step */}
-      {/* {step === 0 && (
-        <img
-          src="../images/regex_intro.png"
-          alt="Regex Injection Introduction"
-          className="imageFadeIn"
-          style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
-        />
-      )} */}
+      {/* This renders images for each step */}
       {step === 1 && (
         <img
           src="../images/regex_threat.png"
@@ -586,30 +577,6 @@ console.log(safeRegex.test("example. * user+ input?"));`,
           style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
         />
       )}
-      {/* {step === 2 && (
-        <img
-          src="../images/regex_code.png"
-          alt="Vulnerable Regex Code"
-          className="imageFadeIn"
-          style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
-        />
-      )} */}
-      {/* {step === 3 && (
-        <img
-          src="../images/regex_consequences.png"
-          alt="Consequences of Regex Injection"
-          className="imageFadeIn"
-          style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
-        />
-      )} */}
-      {/* {step === 4 && (
-        <img
-          src="../images/regex_prevention.png"
-          alt="Regex Injection Prevention Techniques"
-          className="imageFadeIn"
-          style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
-        />
-      )} */}
       {step === 5 && (
         <div>
           <img
@@ -624,7 +591,7 @@ console.log(safeRegex.test("example. * user+ input?"));`,
         </div>
       )}
 
-      {/* Render navigation buttons */}
+      {/* Navigation buttons */}
       {step < steps.length - 1 && (
         <button onClick={nextStep} style={{ marginTop: "20px" }}>
           {steps[step].buttonText}

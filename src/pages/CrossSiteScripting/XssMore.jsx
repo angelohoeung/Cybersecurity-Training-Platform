@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../ClickjackingDemo'; // Make sure the correct CSS file is being imported
+import '../ClickjackingDemo';
 
 const XssMore = () => {
   const navigate = useNavigate();

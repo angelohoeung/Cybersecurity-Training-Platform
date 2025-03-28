@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './EmailspoofQuiz.css'; // Ensure correct styling
+import './EmailspoofQuiz.css';
 
 const EmailspoofQuiz = () => {
   const navigate = useNavigate();

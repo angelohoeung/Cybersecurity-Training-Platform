@@ -50,7 +50,7 @@ const App = () => {
         <Route path={'/home'} element={<Home token={token} />} />
         <Route path={'/SqlStart'} element={<SqlStart token={token} />} />
         <Route path={'/SqlSecond'} element={<SqlSecond token={token} />} />
-        <Route path={'/SqlThird'} element={<SqlThird token={token} />} /> {/* Add this line */}
+        <Route path={'/SqlThird'} element={<SqlThird token={token} />} />
         <Route path={'/SqlFourth'} element={<SqlFourth token={token} />} />
         <Route path={'/SqlFifth'} element={<SqlFifth token={token} />} />
         <Route path={'/SqlSixth'} element={<SqlSixth token={token} />} />
@@ -76,15 +76,15 @@ const App = () => {
         <Route path="/CrossSiteScripting/XssMore" element={<XssMore token={token} />} />
         <Route path="/CrossSiteScripting/XssQuiz" element={<XssQuiz token={token} />} />
 
-        <Route path={'/EmailspoofHome'} element={<EmailspoofHome />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo'} element={<EmailspoofDemo />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo2'} element={<EmailspoofDemo2 />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo3'} element={<EmailspoofDemo3 />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo4'} element={<EmailspoofDemo4 />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo5'} element={<EmailspoofDemo5 />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo6'} element={<EmailspoofDemo6 />} />  {/*added*/}
-        <Route path={'/EmailspoofDemo7'} element={<EmailspoofDemo7 />} />  {/*added*/}
-        <Route path={'/EmailspoofQuiz'} element={<EmailspoofQuiz />} />  {/*added*/}
+        <Route path={'/EmailspoofHome'} element={<EmailspoofHome />} />
+        <Route path={'/EmailspoofDemo'} element={<EmailspoofDemo />} />
+        <Route path={'/EmailspoofDemo2'} element={<EmailspoofDemo2 />} />
+        <Route path={'/EmailspoofDemo3'} element={<EmailspoofDemo3 />} />
+        <Route path={'/EmailspoofDemo4'} element={<EmailspoofDemo4 />} />
+        <Route path={'/EmailspoofDemo5'} element={<EmailspoofDemo5 />} />
+        <Route path={'/EmailspoofDemo6'} element={<EmailspoofDemo6 />} />
+        <Route path={'/EmailspoofDemo7'} element={<EmailspoofDemo7 />} />
+        <Route path={'/EmailspoofQuiz'} element={<EmailspoofQuiz />} />
         
         <Route path={'/Videos'} element={<Videos/>} />
         <Route path={'/Lessons'} element={<Lessons/>} />

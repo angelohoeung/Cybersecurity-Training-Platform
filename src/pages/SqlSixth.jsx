@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Sql.css'; // Import the CSS file
+import './Sql.css';
 
 const SqlSixth = ({ token }) => {
   let navigate = useNavigate();

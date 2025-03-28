@@ -12,7 +12,7 @@ const Lessons = () => {
 
   // Function to handle navigation to attack pages
   const handleNavigateToAttack = (attack) => {
-    navigate(`/${attack}`); // Assuming your attack routes follow a pattern
+    navigate(`/${attack}`);
   };
 
   return (

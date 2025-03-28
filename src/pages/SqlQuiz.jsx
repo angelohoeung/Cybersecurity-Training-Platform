@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './ClickjackingDemo'; // Import the provided CSS file
+import './ClickjackingDemo';
 
 const SqlQuiz = ({ onQuizComplete }) => {
   const navigate = useNavigate();

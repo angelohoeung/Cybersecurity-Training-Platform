@@ -12,7 +12,7 @@ const EmailspoofDemo5 = () => {
     width: '100%',
     padding: '20px',
     marginTop: '50px',
-    gap: '40px', // Increased gap for better spacing
+    gap: '40px',
   };
 
   const leftBoxStyle = {
@@ -37,7 +37,7 @@ const EmailspoofDemo5 = () => {
     borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
-    marginLeft: '30px', // Added margin for extra spacing
+    marginLeft: '30px',
   };
 
   const titleStyle = {
