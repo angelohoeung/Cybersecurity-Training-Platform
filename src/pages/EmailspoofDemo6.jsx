@@ -99,7 +99,7 @@ const EmailspoofDemo6 = ({ token }) => {
         <button onClick={handleNext} className="button" style={{ width: "900px", height: "37px", fontSize: "14px", textAlign: "center" }}>Continue</button>
         <button onClick={handleHome} className="button" style={{ width: "900px", height: "37px", fontSize: "14px", textAlign: "center" }}>Return Home</button>
       </div>
-      
+
     </div>
   );
 };
